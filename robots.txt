@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asuka-goto.com/sitemap.xml
