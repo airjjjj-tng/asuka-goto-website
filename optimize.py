@@ -40,7 +40,7 @@ html = html.replace('"¥3,500 - ¥8,500"', '"¥5,000 - ¥6,000"')
 twitter_tags = '''    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Guest House ASUKA | 五島市の長期宿泊・長期出張におすすめ">
     <meta name="twitter:description" content="長崎県五島市（福江島）の工事関係者・公共事業・ビジネス長期滞在に特化。泊まるほど安くなる連泊割引、自炊キッチン、無料朝食トースト、24hシャワー完備で現場を支えます。">
-    <meta name="twitter:image" content="https://asuka-goto.com/image/asuka-parking-entrance.webp">'''
+    <meta name="twitter:image" content="https://www.asuka-goto.com/image/asuka-parking-entrance.webp">'''
 html = html.replace('<meta name="twitter:card" content="summary_large_image">', twitter_tags)
 
 # 4. Process Images

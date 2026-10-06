@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asuka-goto.com/sitemap.xml
+Sitemap: https://www.asuka-goto.com/sitemap.xml
