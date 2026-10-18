@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /_api/
 
-Sitemap: https://www.asuka-goto.com/sitemap.xml
+Sitemap: https://asuka-goto.com/sitemap.xml
