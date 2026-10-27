@@ -35,4 +35,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // 電話発信タップの計測（GA4 コンバージョン/キーイベント用）
+    const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+    phoneLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const phoneNumber = this.getAttribute('href').replace('tel:', '');
+            if (typeof gtag === 'function') {
+                gtag('event', 'phone_call', {
+                    event_category: 'contact',
+                    event_label: phoneNumber,
+                    phone_number: phoneNumber,
+                    link_url: this.href,
+                    value: 1
+                });
+            }
+        });
+    });
 });

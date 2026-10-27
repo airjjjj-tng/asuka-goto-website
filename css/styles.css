@@ -701,6 +701,8 @@ h1, h2, h3, h4 {
 }
 
 .contact-phone {
+    display: block;
+    text-decoration: none;
     background: var(--primary-color);
     color: #fff;
     padding: 40px 30px;
@@ -708,6 +710,42 @@ h1, h2, h3, h4 {
     text-align: center;
     position: sticky;
     top: 100px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-phone:hover {
+    background-color: #1a252f;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    transform: translateY(-3px);
+}
+
+.contact-phone:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.inline-phone-link {
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s;
+}
+
+.inline-phone-link:hover {
+    opacity: 0.8;
+}
+
+.footer-phone-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-phone-link:hover {
+    text-decoration: underline;
+    opacity: 0.9;
 }
 
 .contact-phone h3 {
@@ -847,6 +885,12 @@ h1, h2, h3, h4 {
     
     .contact-wrapper {
         grid-template-columns: 1fr;
+    }
+    
+    .contact-phone {
+        position: static;
+        margin-top: 30px;
+        padding: 30px 20px;
     }
     
     .form-row {
